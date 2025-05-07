@@ -1,5 +1,4 @@
 .certificados {
-    outline: 1px solid red;
     width: 100%;
     height:100%;
     display: grid;
@@ -8,7 +7,7 @@
 }
 
 .certificados-container {
-    background-color: #fff;
+    background-color: none;
     margin-left: 15%;
     display: flex;
     flex-direction: column;
@@ -18,13 +17,14 @@
 
 .certificados-container h2 {
     padding: 10px;
+    color: #1b263b;
 }
 
 .list-certificados {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
     /*max-width: 60%;*/
     gap: 20px;
 }
@@ -32,7 +32,8 @@
 .certificado {
     display: flex;
     align-items: center;
-    background: #917d7d;
+    background: #415a77d3;
+    color: #e0e1dd;
     padding: 10px;
     border-radius: 10px;
     width: 85%;
@@ -73,10 +74,11 @@
 .tecnologias-container {
     display: grid;
     grid-template-columns: 1fr;
+    color: #1b263b;
 }
 
 .tecnologias {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
@@ -99,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    /*background-color: #778da9ba;*/
 }
 
 .img {
@@ -123,7 +125,6 @@
 .herramientas-container {
     grid-column: 1 / 3;
     justify-self: center;
-    outline: 1px solid red;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -132,12 +133,18 @@
     margin-top: 35px;
 }
 
+.herramientas-container h2{
+    color: #415a77;
+}
+
 .herramientas {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: .5fr 1fr ;
     gap: 30px;
-    background: #978e8e;
+    background: #415a77;
+    padding: 10px;
+    border-radius: 10px;
+    color: #e0e1dd;
 }
 
 .herramientas h2 {
