@@ -1,0 +1,126 @@
+.proyectos {
+    width: 100%;
+    height: 100dvh;
+    background: #778da9;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 20px;
+    padding-top:10vh;
+}
+
+.figuras {
+    background: #e0e1dd;
+    border-radius: 50px;
+    margin: 5vw 1vw 5vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #e0e1dd;
+    
+}
+
+.archivos {
+    height: 70vh;
+}
+
+.proyectos-container h2 {
+    font-size: clamp(16px, 15vh, 40px);
+}
+
+.proyectos-container p {
+    font-size: clamp(16px, 10vh, 18px);
+}
+
+.proyecto-container {
+    position: relative;
+    background: #1b263b;
+    height: clamp(4vh, 8vh, 100px);
+    width: clamp(280px, 80%, 1000px);
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text-proyecto {
+    font-size: clamp(10px, 1.5rem, 18px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e0e1dd;
+    left: 1vw;
+}
+
+.nombre-proyecto {
+    font-size: clamp(10px, 1.5rem, 20px);
+    font-weight: 600;
+}
+
+.tienda-img {
+    height: 40vh;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 10px;
+    right: -15.5vw;
+}
+
+.vet-img {
+    height: 40vh;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 1.5vh;
+    right: -1vw;
+}
+
+.elec-img {
+    height: 40vh;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 1.5vh;
+    right: -17.5vw;
+}
+
+.curs-img {
+    height: 40vh;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 1.5vh;
+    right: 0;
+}
+
+.clinica-img {
+    height: 40vh;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 1.5vh;
+    right: -15vw;
+}
+
+@media (max-width: 768px) {
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .fila2 {
+        grid-template-columns: 1fr;
+        grid-column: auto;
+    }
+
+    .proyecto-container {
+        height: 30vh;
+    }
+
+    .proceso,
+    .proyecto-container.en-proceso {
+        grid-column: auto;
+        height: 30vh;
+        width: 100%;
+    }
+}

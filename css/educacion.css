@@ -1,0 +1,96 @@
+.educacion {
+    height: 100dvh;
+    width: 100%;
+}
+
+.educacion h2 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    padding: 10vh 0 3vh 3vw;
+    color: #415a77;
+}
+
+.edu-list {
+    /*outline: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:  0 5vw;
+}
+
+.edu-item {
+    list-style: none;
+    background: #778da9;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    color: #e0e1dd;
+}
+
+.img-edu {
+    width: clamp(70px, 7vw, 120px);
+    height: clamp(70px, 7vw, 120px);
+    border-radius: 8px;
+}
+
+.edu-text {
+    padding-left: 20px;
+    font-size: clamp(5px, 1.8vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.instituto {
+    font-weight: 600;
+}
+
+.backend {
+    font-weight: 400;
+}
+
+.edu-item:nth-child(2){
+    margin-left: clamp(0px, 10vw, 150px);
+}
+
+.edu-item:nth-child(3){
+    margin-left: clamp(150px, 20vw, 300px);
+}
+
+.idiom-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 100px;
+    color: #415a77;
+}
+
+.idiom-item {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .educacion {
+        width: 90%;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .edu-item {
+        width: 100%;
+    }
+
+    .edu-item:nth-child(2){
+        margin-left: 0;
+    }
+    
+    .edu-item:nth-child(3){
+        margin-left: 0;
+    }
+
+    .educacion h2{
+        text-align: center;
+    }
+}

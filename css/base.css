@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+  background: #e0e1dd;
+  background-attachment: fixed;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.colors {
+    height: 40dvh;
+    width: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, #6aead7, transparent 30%),
+        radial-gradient(circle at 80% 20%, #32f75c, transparent 30%),
+        radial-gradient(circle at 30% 70%, #aa00ff, transparent 70%),
+        radial-gradient(circle at 70% 80%, #77d552, transparent 30%);
+    background-size: 300% 300%;
+    animation: animacion 30s infinite ease-in-out;
+    z-index: -10;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.grad-div {
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(to bottom,#d0d4bc6b 0%, #e0e1dd 100%);
+    z-index: 0;
+    position: relative;
+    top:0px;
+    left: 0;
+    
+}
+
+/*-------- DARK MODE --------*/
+
+html.dark {
+    background: #1b1046;
+}
+
+html.dark .fondo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html.dark .colors {
+        height: 40dvh;
+        width: 100%;
+        background: 
+        radial-gradient(circle at 20% 30%, #cad488, transparent 30%),
+        radial-gradient(circle at 80% 20%, #f0da4b, transparent 30%),
+        radial-gradient(circle at 30% 70%, #aa00ff, transparent 70%),
+        radial-gradient(circle at 70% 80%, #d5528d, transparent 30%);
+        background-size: 300% 300%;
+        animation: animacion 30s infinite ease-in-out;
+        z-index: -10;
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: -10px;
+}
+
+html.dark .grad-div {
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(to bottom,#1b104684 0%, #1b1046 100%);
+    z-index: 0;
+    position: relative;
+    top:0px;
+    
+}
+
+html.dark .mascara {
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #2a5a4b4c;
+    z-index: -1;
+}
+
+@keyframes animacion {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

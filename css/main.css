@@ -1,0 +1,97 @@
+main {
+    /*outline: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------ INICIO ------*/
+
+.inicio {
+    /*outline: 1px solid blue;*/
+    width: min(90%, 1000px);
+    height:calc(100dvh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #415a77;
+}
+
+.inicio h2 {
+    position: static;
+    text-align: center;
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+}
+
+.hola {
+    font-family: 'Pacifico';
+    background: linear-gradient(90deg, #71ab98, #7087b7);
+    color: transparent;
+    background-clip: text;
+    padding: 0 5px 0 5px;
+    -webkit-background-clip: text;
+}
+
+.inicio .especialidad {
+    font-size: clamp(1.5rem, 7vw, 5rem);
+    position: static;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bienvenida-container {
+    /*outline: 1px red solid;*/
+}
+
+.bienvenida-text {
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #415a77;
+}
+
+/*------ DARK MODE ------*/
+
+html.dark .hola {
+    background: linear-gradient(90deg, #d774dc, #e6dc83);
+    color: transparent;
+    background-clip: text;
+    padding: 0 5px 0 5px;
+    -webkit-background-clip: text;
+}
+
+html.dark .inicio {
+    color: #aba784;
+}
+
+html.dark .bienvenida-text {
+    color: #aba784a1;
+}
+
+@media (max-width: 768px) {
+    .inicio {
+        height: 100dvh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inicio .especialidad {
+        position: static;
+        margin: 0 auto;
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+    .bienvenida-text {
+        font-size: 0.9rem;
+        padding-bottom: 100px;
+    }
+}
