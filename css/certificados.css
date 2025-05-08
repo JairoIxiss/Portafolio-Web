@@ -18,6 +18,7 @@
 .certificados-container h2 {
     padding: 10px;
     color: #1b263b;
+    font-size: clamp(16px, 15vh, 40px);
 }
 
 .list-certificados {
@@ -42,6 +43,7 @@
 
 .text {
     width: 400px;
+
 }
 
 .img-container {
@@ -90,6 +92,7 @@
     grid-column: 1 / 4;
     align-self: center;
     justify-self: center;
+    font-size: clamp(16px, 15vh, 40px);
 }
 
 .tecnologias :nth-child(8) {
@@ -134,7 +137,8 @@
 }
 
 .herramientas-container h2{
-    color: #415a77;
+    font-size: clamp(16px, 15vh, 40px);
+    color: #1b263b;
 }
 
 .herramientas {

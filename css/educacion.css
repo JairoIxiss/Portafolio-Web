@@ -4,7 +4,7 @@
 }
 
 .educacion h2 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(16px, 15vh, 40px);
     padding: 10vh 0 3vh 3vw;
     color: #415a77;
 }

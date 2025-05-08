@@ -26,8 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 50%;
-    margin-top: 70px;
-    outline: 1px solid red;
+    margin-top: 50px;
     gap: 30px;
     color: #1b263b;
 }
@@ -55,11 +54,26 @@
     height: 10px;
     padding: 20px 0;
     font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+.input-item textarea {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 0;         
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    resize: none;   
 }
 
 .btn-enviar {
     width: 50%;
     height: 5vh;
     justify-self: center;
-    grid-column: 1 / 3
+    grid-column: 1 / 3;
+    border:none;
+    border-radius: 8px;
 }
