@@ -10,13 +10,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    animation: aparecerBarra 0.6s ease-out forwards;
 }
 
 .list-nav {
-    /*outline: 1px solid red;*/
-    background: #aacebbaf;
-    backdrop-filter: blur(0.4rem);
+    background: #aacebbbc;
     border-radius: 25px;
     list-style: none;
     display: flex;
@@ -109,4 +107,17 @@ html.dark .nav-link {
         display: none;
     }
 
+}
+
+/*ANIMACIONES*/
+
+@keyframes aparecerBarra {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
