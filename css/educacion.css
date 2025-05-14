@@ -3,10 +3,11 @@
     width: 100%;
 }
 
-.educacion h2 {
+.titulo-edu {
     font-size: clamp(16px, 15vh, 40px);
     padding: 10vh 0 3vh 3vw;
     color: #415a77;
+    opacity: 0;
 }
 
 .edu-list {
@@ -93,4 +94,20 @@
     .educacion h2{
         text-align: center;
     }
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+    animation: fadeUp 1s ease-out forwards;
 }

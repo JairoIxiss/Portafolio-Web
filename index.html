@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/nav-bar.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -31,7 +33,7 @@
     </div>
 
     <header>
-        <nav class="nav">
+        <nav class="nav animate__animated animate__fadeInDown">
                 <ul class="list-nav">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -104,9 +106,9 @@
         </section>
         <!--EDUCACION-->
         <section class="educacion">
-            <h2>Mi Desarrollo</h2>
+            <h2 class="titulo-edu">Mi Desarrollo</h2>
             <ul class="edu-list">
-                <li class="edu-item">
+                <li class="edu-item" data-aos="fade-right" data-aos-once="true">
                     <img src="img/tdc.png" alt="" class="img-edu"/>
                     <div class="edu-text">
                     <p class="instituto">TodoCode Academy</p>
@@ -114,7 +116,7 @@
                     <p>Java Developer</p>
                     </div>
                 </li>
-                <li class="edu-item">
+                <li class="edu-item" data-aos="fade-right" data-aos-once="true">
                     <img src="img/Oracle-ONE.jpg" alt="" class="img-edu"/>
                     <div class="edu-text">
                     <p class="instituto">Oracle Next Education <span class="backend">F2 T5 BACK-END</span></p>
@@ -122,7 +124,7 @@
                     <p>Java Developer Jr</p>
                     </div>
                 </li>
-                <li class="edu-item">
+                <li class="edu-item" data-aos="fade-right" data-aos-once="true">
                     <img src="img/itm.jpeg" alt="" class="img-edu"/>
                     <div class="edu-text">
                     <p class="instituto">Instituto Tecnológico De Morelia</p>
@@ -132,18 +134,18 @@
                 </li>
             </ul>
             <ul class="idiom-list">
-                <li class="idiom-item">
+                <li class="idiom-item" data-aos="fade-up" data-aos-once="true">
                     <span class="material-symbols-outlined">translate</span>
                     <p class="leng">Inglés - B2</p>
                 </li>
-                <li class="idiom-item">
+                <li class="idiom-item" data-aos="fade-up" data-aos-once="true">
                     <span class="material-symbols-outlined">translate</span>
                     <p class="leng">Español - Nativo</p>
                 </li>
             </ul>
         </section>
         <!--PROYECTOS-->
-        <section class="proyectos" id="proyectos">
+        <section class="proyectos" id="proyectos" data-aos="zoom-in-up" data-aos-once="true">
             <div class="figuras">
                 <img src="/img/archivos.png" alt="" class="archivos">
             </div>
@@ -200,7 +202,7 @@
         <section class="certificados" id="certificados">
             <div class="certificados-container">
                 <h2>Certificados</h2>
-                <ul class="list-certificados">
+                <ul class="list-certificados" data-aos="fade-right" data-aos-once="true">
                     <li class="certificado">
                         <div class="img-container">
                         <img src="img/Oracle-ONE.jpg" alt="" class="img-inst">
@@ -217,7 +219,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="certificado">
+                    <li class="certificado" data-aos="fade-left" data-aos-once="true">
                         <div class="img-container">
                         <img src="img/tdc.png" alt="" class="img-inst">
                         </div>
@@ -233,7 +235,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="certificado">
+                    <li class="certificado" data-aos="fade-right" data-aos-once="true">
                         <div class="img-container">
                         <img src="img/tdc.png" alt="" class="img-inst">
                         </div>
@@ -249,7 +251,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="certificado">
+                    <li class="certificado" data-aos="fade-left" data-aos-once="true">
                         <div class="img-container">
                         <img src="img/Oracle-ONE.jpg" alt="" class="img-inst">
                         </div>
@@ -265,7 +267,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="certificado">
+                    <li class="certificado" data-aos="fade-right" data-aos-once="true">
                         <div class="img-container">
                         <img src="img/tdc.png" alt="" class="img-inst">
                         </div>
@@ -283,7 +285,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="tecnologias-container">
+            <div class="tecnologias-container" data-aos="fade-down-left" data-aos-once="true">
                     <div class="tecnologias">
                         <h2>Tecnologías</h2>
                         <div class="tecn tecnologia-java">
@@ -386,7 +388,7 @@
             </div>
         </section>
         <!--CONTACTO-->
-        <section class="contacto" id="contacto">
+        <section class="contacto" id="contacto" data-aos="zoom-in" data-aos-once="true">
             <h2>Enviame un mensaje!</h2>
             <p>Tienes una propuesta o pregunta? Mándala!</p>
             <form class="formulario-contacto" netlify>
@@ -427,6 +429,8 @@
 
     <script src="/js/script-darkmode.js"></script>
     <script src="/js/fadeUp.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 </html>
