@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/certificados.css">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/modal-proyectos.css">
 
     <title>Jairo Ixis &lt;BackEnd Developer&gt; </title>
 
@@ -154,7 +155,7 @@
                 <p>
                     Conoce mi forma de trabajar y mis conocimientos dando un vistazo a mis proyectos!
                 </p>
-                <div class="proyecto-container">
+                <div class="proyecto-container" data-modal="modal-tienda">
                     <p class="text-proyecto">
                         API
                         <br>
@@ -162,7 +163,7 @@
                     </p>
                     <img src="/img/api-tienda.png" alt="" class="tienda-img">
                 </div>
-                <div class="proyecto-container">
+                <div class="proyecto-container" data-modal="modal-vet">
                     <p class="text-proyecto">
                         API
                         <br>
@@ -170,7 +171,7 @@
                     </p>
                     <img src="/img/api-vet.png" alt="" class="vet-img">
                 </div>
-                <div class="proyecto-container">
+                <div class="proyecto-container" data-modal="modal-electro">
                     <p class="text-proyecto">
                         API Microservicios
                         <br>
@@ -178,7 +179,7 @@
                     </p>
                     <img src="/img/api-electro.png" alt="" class="elec-img">
                 </div>
-                <div class="proyecto-container">
+                <div class="proyecto-container" data-modal="modal-cursos">
                     <p class="text-proyecto">
                         API
                         <br>
@@ -187,14 +188,14 @@
                     <img src="/img/api-cursos.png" alt="" class="curs-img">
                 </div>
                 <h2 class="proceso">En Proceso...</h2>
-                <div class="proyecto-container">
+                <div class="proyecto-container" data-modal="modal-clinica">
                     <p class="text-proyecto">
                     Sistema con Microservicios
                     <br>
                     <span class="nombre-proyecto">Clínica Médica</span>
                     </p>
                     <img src="/img/sist-clinica.png" alt="" class="clinica-img">
-                </div>   
+                </div> 
             </div>
             
         </section>
@@ -214,7 +215,6 @@
                                 <p class="finalizacion">Fecha de finalización: <span class="txt-cert">28 de Septiembre del 2023</span></p>
                             </div>
                             <div class="botones">
-                                <a href="#" class="boton">Ver más</a>
                                 <a href="#" class="boton">Ver credencial</a>
                             </div>
                         </div>
@@ -230,7 +230,6 @@
                                 <p class="finalizacion">Fecha de finalización: <span class="txt-cert">13 de Enero del 2025</span></p>
                             </div>
                             <div class="botones">
-                                <a href="#" class="boton">Ver más</a>
                                 <a href="#" class="boton">Ver credencial</a>
                             </div>
                         </div>
@@ -246,7 +245,6 @@
                                 <p class="finalizacion">Fecha de finalización: <span class="txt-cert">18 de Octubre del 2024</span></p>
                             </div>
                             <div class="botones">
-                                <a href="#" class="boton">Ver más</a>
                                 <a href="#" class="boton">Ver credencial</a>
                             </div>
                         </div>
@@ -262,7 +260,6 @@
                                 <p class="finalizacion">Fecha de finalización: <span class="txt-cert">13 de Septiembre del 2023</span></p>
                             </div>
                             <div class="botones">
-                                <a href="#" class="boton">Ver más</a>
                                 <a href="#" class="boton">Ver credencial</a>
                             </div>
                         </div>
@@ -278,14 +275,13 @@
                                 <p class="finalizacion">Fecha de finalización: <span class="txt-cert">20 de Enero del 2025</span></p>
                             </div>
                             <div class="botones">
-                                <a href="#" class="boton">Ver más</a>
                                 <a href="#" class="boton">Ver credencial</a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="tecnologias-container" data-aos="fade-down-left" data-aos-once="true">
+            <div class="tecnologias-container" data-aos="fade-up" data-aos-once="true">
                     <div class="tecnologias">
                         <h2>Tecnologías</h2>
                         <div class="tecn tecnologia-java">
@@ -427,10 +423,86 @@
         <p>&copy;Jairo Ixis 2025 </p>
     </footer>
 
+    <div id="modal-tienda" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">API: Tienda Abarrotes</h3>
+            <p class="modal-description">Esta es una API hecha con la finalidad de facilitar el trabajo...</p>
+            <div class="tecnologias-proyecto">
+                <span class="tecnologia-item">Java</span>
+                <span class="tecnologia-item">Spring Boot</span>
+                <span class="tecnologia-item">MySQL</span>
+                <span class="tecnologia-item">Postman</span>
+            </div>
+            <img src="/img/api-tienda.png" alt="API Tienda">
+        </div>
+    </div>
+
+    <div id="modal-vet" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">API: Tienda Abarrotes</h3>
+            <p class="modal-description">Esta es una API hecha con la finalidad de facilitar el trabajo...</p>
+            <div class="tecnologias-proyecto">
+                <span class="tecnologia-item">Java</span>
+                <span class="tecnologia-item">Spring Boot</span>
+                <span class="tecnologia-item">MySQL</span>
+                <span class="tecnologia-item">Postman</span>
+            </div>
+            <img src="/img/api-tienda.png" alt="API Tienda">
+        </div>
+    </div>
+
+    <div id="modal-electro" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">API: Tienda Abarrotes</h3>
+            <p class="modal-description">Esta es una API hecha con la finalidad de facilitar el trabajo...</p>
+            <div class="tecnologias-proyecto">
+                <span class="tecnologia-item">Java</span>
+                <span class="tecnologia-item">Spring Boot</span>
+                <span class="tecnologia-item">MySQL</span>
+                <span class="tecnologia-item">Postman</span>
+            </div>
+            <img src="/img/api-tienda.png" alt="API Tienda">
+        </div>
+    </div>
+
+    <div id="modal-cursos" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">API: Tienda Abarrotes</h3>
+            <p class="modal-description">Esta es una API hecha con la finalidad de facilitar el trabajo...</p>
+            <div class="tecnologias-proyecto">
+                <span class="tecnologia-item">Java</span>
+                <span class="tecnologia-item">Spring Boot</span>
+                <span class="tecnologia-item">MySQL</span>
+                <span class="tecnologia-item">Postman</span>
+            </div>
+            <img src="/img/api-tienda.png" alt="API Tienda">
+        </div>
+    </div>
+
+    <div id="modal-clinica" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 class="modal-title">API: Tienda Abarrotes</h3>
+            <p class="modal-description">Esta es una API hecha con la finalidad de facilitar el trabajo...</p>
+            <div class="tecnologias-proyecto">
+                <span class="tecnologia-item">Java</span>
+                <span class="tecnologia-item">Spring Boot</span>
+                <span class="tecnologia-item">MySQL</span>
+                <span class="tecnologia-item">Postman</span>
+            </div>
+            <img src="/img/api-tienda.png" alt="API Tienda">
+        </div>
+    </div>
+
     <script src="/js/script-darkmode.js"></script>
     <script src="/js/fadeUp.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script src="/js/script-modalProyectos.js"></script>
 
 </body>
 </html>
