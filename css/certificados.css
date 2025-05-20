@@ -17,7 +17,7 @@
 
 .certificados-container h2 {
     padding: 10px;
-    color: #1b263b;
+    color: #886f9e;
     font-size: clamp(16px, 15vh, 40px);
 }
 
@@ -25,20 +25,19 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    /*outline: 1px solid green;*/
-    /*max-width: 60%;*/
     gap: 20px;
 }
 
 .certificado {
     display: flex;
     align-items: center;
-    background: #415a77d3;
-    color: #e0e1dd;
+    background: #7a5b94;
+    color: #f5d8ef;
     padding: 10px;
     border-radius: 10px;
     width: 85%;
     justify-self: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text {
@@ -78,8 +77,8 @@
   text-decoration: none;
   border-radius: 2rem;
   border: 2px solid transparent;
-  background: #e0e1dd8f;
-  color: #1b263b;
+  background: #c6a1b7;
+  color: #743c65;
   transition: 
     transform 0.2s ease,
     background 0.4s ease,
@@ -103,11 +102,10 @@
 .tecnologias-container {
     display: grid;
     grid-template-columns: 1fr;
-    color: #1b263b;
+    color: #886f9e;
 }
 
 .tecnologias {
-    /*outline: 1px solid red;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
@@ -131,7 +129,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background-color: #778da9ba;*/
 }
 
 .img {
@@ -165,17 +162,18 @@
 
 .herramientas-container h2{
     font-size: clamp(16px, 15vh, 40px);
-    color: #1b263b;
+    color: #886f9e;
 }
 
 .herramientas {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 30px;
-    background: #415a77;
+    background: #7a5b94;
     padding: 10px;
     border-radius: 10px;
-    color: #e0e1dd;
+    color: #f5d8ef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .herramientas h2 {

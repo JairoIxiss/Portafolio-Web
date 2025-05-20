@@ -1,6 +1,5 @@
 .contacto {
     padding: 100px;
-    /*outline: 1px solid blue;*/
     width: 80%;
     height: 100%;
     display: flex;
@@ -12,14 +11,14 @@
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    color: #1b263b;
+    color: #886f9e;
 }
 
 .contacto p {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: #1b263b;
+    color: #886f9e;
 }
 
 .formulario-contacto {
@@ -28,7 +27,7 @@
     width: 50%;
     margin-top: 50px;
     gap: 30px;
-    color: #1b263b;
+    color: #886f9e;
 }
 
 .input-item {
@@ -56,6 +55,7 @@
     font-size: 18px;
     border: none;
     border-radius: 8px;
+    background: #f5d8ef;
 }
 
 .input-item textarea {
@@ -67,6 +67,7 @@
     width: 100%;
     height: 150px;
     resize: none;   
+    background: #f5d8ef;
 }
 
 .btn-enviar {
@@ -76,4 +77,13 @@
     grid-column: 1 / 3;
     border:none;
     border-radius: 8px;
+    background: #ebc3db;
+    color: #743c65;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease, border-radius 0.4s ease
 }
+
+.btn-enviar:hover {
+    background: #f5d8ef;
+    cursor: pointer;
+} 

@@ -17,7 +17,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #415a77;
+    color: #886f9e;
 }
 
 .inicio h2 {
@@ -30,7 +30,7 @@ main {
 
 .hola {
     font-family: 'Pacifico';
-    background: linear-gradient(90deg, #71ab98, #7087b7);
+    background: linear-gradient(90deg, #c854ecb7, #4539f0b1);
     color: transparent;
     background-clip: text;
     padding: 0 5px 0 5px;
@@ -52,7 +52,7 @@ main {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    color: #415a77;
+    color: #886f9e;
     animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.8s;
     opacity: 0;

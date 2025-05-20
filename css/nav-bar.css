@@ -13,7 +13,7 @@ header {
 }
 
 .list-nav {
-    background: #aacebbbc;
+    background: #bd85a79e;
     backdrop-filter: blur(4px);
     border-radius: 25px;
     list-style: none;
@@ -35,16 +35,17 @@ header {
     width: 150px;
     justify-content: center;
     padding: 7px 0 7px 0;
+    transition: background 0.4s ease, border-radius 0.4s ease;
 }
 
 .nav-item:hover {
-    background: #cbe1d273;
+    background: #bd92ac;
     border-radius: 50px;
 }
 
 .nav-link{
     text-decoration: none;
-    color: #415a77;
+    color: #f5d8ef;
     font-size: 16px;
     font-weight: 600;
     display: flex;
@@ -65,7 +66,16 @@ header {
     display: flex;
     cursor: pointer;
     border-radius: 15px;
-    background: #ac9a9a56;
+    background: none;
+    border: none;
+    transition: background 0.4s ease, border-radius 0.4s ease;
+}
+
+.switch:hover {
+    display: flex;
+    cursor: pointer;
+    border-radius: 15px;
+    background: #bd92ac;
     border: none;
 }
 

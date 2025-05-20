@@ -1,8 +1,8 @@
 footer {
     height: 100%;
     width: 100%;
-    background: #1b263b;
-    color: #e0e1dd;
+    background: #7a5b94;
+    color: #f5d8ef;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ footer {
 }
 
 footer a {
-    color: #e0e1dd;
+    color: #f5d8ef;
     font-size: 30px;
     text-decoration: none;
 }

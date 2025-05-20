@@ -6,7 +6,7 @@
 .titulo-edu {
     font-size: clamp(16px, 15vh, 40px);
     padding: 10vh 0 3vh 3vw;
-    color: #415a77;
+    color: #886f9e;
     opacity: 0;
 }
 
@@ -20,12 +20,13 @@
 
 .edu-item {
     list-style: none;
-    background: #778da9;
+    background:  linear-gradient(90deg, #8e5c67, #743c65);
     width: 70%;
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    color: #e0e1dd;
+    color: #f5d8ef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .img-edu {
@@ -64,7 +65,7 @@
     justify-content: center;
     padding-top: 30px;
     gap: 100px;
-    color: #415a77;
+    color: #743c65;
 }
 
 .idiom-item {

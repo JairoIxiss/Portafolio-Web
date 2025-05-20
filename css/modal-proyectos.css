@@ -17,7 +17,7 @@
 }
 
 .modal-content {
-  background: #e0e1dd;
+  background: #c6a1b7ec;
   padding: 20px;
   border-radius: 10px;
   max-width: 80%;
@@ -31,15 +31,15 @@
 .modal-title {
   font-size: clamp(1rem, 3rem, 30px);
   padding-bottom: 30px;
-  color: #1b263b;
+  color: #5a629e;
 }
 
 .modal-description {
-  border-top: 1px solid #1b263b;
+  border-top: 1px solid #5a629e;
   padding-top: 10px;
   margin: 0 20px;
   text-align: justify;
-  color: #1b263b;
+  color: #743c65;
 }
 
 .modal-content img {
@@ -55,7 +55,7 @@
   right: 15px;
   font-size: 25px;
   cursor: pointer;
-  color: #415a77;
+  color: #5a629e;
 }
 
 .tecnologias-proyecto {
@@ -67,9 +67,10 @@
 }
 
 .tecnologia-item {
-  background: #dddbf1;
+  background: linear-gradient(45deg, #efabd4a9, #f7ada0);;
   padding: 6px 10px;
   border-radius: 20px;
+  color: #5a629e;
 }
 
 .links {
@@ -85,7 +86,7 @@
 .links a {
   padding-top: 20px;
   text-decoration: none;
-  color: #1b263b;
+  color: #743c65;
 }
 
 @keyframes fadeInScale {

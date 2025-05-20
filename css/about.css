@@ -1,8 +1,9 @@
 .sobremi {
-    background: #415a77;
+    background: #816389;
     width: 90%;
     height: 100dvh;
     border-radius: 60px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .principal {
@@ -22,7 +23,7 @@
 }
 
 .presente {
-    color: #e0e1dd;
+    color: #f5d8ef;
     font-size: clamp(1rem, 5vw, 2rem);
     font-weight: 600;
     padding-top: 120px;
@@ -32,8 +33,8 @@
 
 .descripcion {
    /*outline: 1px solid red;*/
-   border-top: 1px solid #e0e1dd;
-   color: #e0e1dd;
+   border-top: 1px solid #f5d8ef;
+   color: #f5d8ef;
    font-weight: 500;
    font-size: clamp(1rem, 1.2rem, 16px);
    text-align: justify; 
