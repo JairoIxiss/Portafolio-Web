@@ -87,3 +87,15 @@
     background: #f5d8ef;
     cursor: pointer;
 } 
+
+html.dark .contacto h2 {
+    color: #f2a187;
+}
+
+html.dark .contacto p{
+    color: #f2a187;
+}
+
+html.dark .formulario-contacto {
+    color: #f2a187;
+}

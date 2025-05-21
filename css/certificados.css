@@ -75,8 +75,7 @@
   padding: 0.75rem 1.5rem;
   font-size: clamp(14px, 2.5vw, 12px);
   text-decoration: none;
-  border-radius: 2rem;
-  border: 2px solid transparent;
+  border-radius: 1rem;
   background: #c6a1b7;
   color: #743c65;
   transition: 
@@ -187,4 +186,20 @@
 .herr {
     display: flex;
     align-items: center;
+}
+
+html.dark .certificados-container h2 {
+    color: #f2a187;
+}
+
+html.dark .certificado {
+    background: #603965;
+}
+
+html.dark .tecnologias-container {
+    color: #f2a187;
+}
+
+html.dark .herramientas-container h2 {
+    color: #f2a187;
 }

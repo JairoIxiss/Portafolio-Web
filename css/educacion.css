@@ -73,6 +73,18 @@
     gap: 10px;
 }
 
+html.dark .titulo-edu{
+    color: #f2a187;
+}
+
+html.dark .edu-item {
+    background:  linear-gradient(90deg, #48305e, #743c65);
+}
+
+html.dark .idiom-list {
+    color: #f2a187;
+}
+
 @media (max-width: 768px) {
     .educacion {
         width: 90%;

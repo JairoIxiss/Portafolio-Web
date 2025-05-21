@@ -127,6 +127,10 @@
   box-shadow: 0 4px 10px rgba(27, 38, 59, 0.2);
 }
 
+html.dark .proyectos{
+    background: none;
+}
+
 @media (max-width: 768px) {
     .proyectos {
         grid-template-columns: 1fr;

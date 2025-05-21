@@ -69,11 +69,11 @@ html.dark .hola {
 }
 
 html.dark .inicio {
-    color: #aba784;
+    color: #f2a187;
 }
 
 html.dark .bienvenida-text {
-    color: #aba784a1;
+    color: #f2a187;
 }
 
 @media (max-width: 768px) {

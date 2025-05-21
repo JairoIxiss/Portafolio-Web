@@ -87,15 +87,15 @@ header {
 /*-------- DARK MODE --------*/
 
 html.dark .mode {
-    color: rgb(214, 214, 57);
+    color: rgb(240, 180, 49);
 }
 
 html.dark .list-nav {
-    background: #47405eaf;
+    background: #743c6579;
 }
 
 html.dark .nav-link {
-    color: antiquewhite;
+    color: #f5d8ef;
 }
 
 @media (max-width: 900px) {

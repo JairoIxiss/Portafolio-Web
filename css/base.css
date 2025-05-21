@@ -25,7 +25,7 @@ body {
     height: 40dvh;
     width: 100%;
     background: 
-        radial-gradient(circle at 20% 30%, #6aead7, transparent 30%),
+        radial-gradient(circle at 20% 30%, #573bb3, transparent 30%),
         radial-gradient(circle at 80% 20%, #3423f4, transparent 30%),
         radial-gradient(circle at 30% 70%, #aa00ff, transparent 70%),
         radial-gradient(circle at 70% 80%, #a557a5, transparent 30%);
