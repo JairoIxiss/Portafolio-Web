@@ -1,5 +1,4 @@
 main {
-    /*outline: 1px solid red;*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,17 +6,45 @@ main {
     align-items: center;
 }
 
+.palm1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #603965;
+  -webkit-mask: url('/img/palm.png') no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url('/img/palm.png') no-repeat center;
+  mask-size: contain;
+  position: absolute;
+  left: 750px;
+  bottom: -100px;
+}
+
+.palm2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #603965;
+  -webkit-mask: url('/img/palm2.png') no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url('/img/palm2.png') no-repeat center;
+  mask-size: contain;
+  position: absolute;
+  left: -870px;
+  bottom: -80px;
+}
+
 /*------ INICIO ------*/
 
 .inicio {
     /*outline: 1px solid blue;*/
-    width: min(90%, 1000px);
+    width: 100%;
     height:calc(100dvh - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #886f9e;
+    position: relative;
+    overflow: hidden
 }
 
 .inicio h2 {
@@ -48,7 +75,7 @@ main {
 }
 
 .bienvenida-text {
-    padding: 20px;
+    padding: 20px 200px;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
