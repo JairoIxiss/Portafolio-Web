@@ -133,9 +133,10 @@ html.dark .proyectos{
 
 @media (max-width: 768px) {
     .proyectos {
-        height: 100vh;
+        height: 100%;
         grid-template-columns: 1fr;
         padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 
     .proyectos-container {
