@@ -123,6 +123,10 @@ html.dark .bienvenida-text {
   .bienvenida-text {
     font-size: 1rem;
     padding: 20px 40px;
+    background: #c4bfbf5c;
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 }
 
