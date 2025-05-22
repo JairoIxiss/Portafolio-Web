@@ -56,6 +56,7 @@
     border: none;
     border-radius: 8px;
     background: #f5d8ef;
+    color: #743c65;
 }
 
 .input-item textarea {
@@ -68,6 +69,7 @@
     height: 150px;
     resize: none;   
     background: #f5d8ef;
+    color: #743c65;
 }
 
 .btn-enviar {
@@ -87,6 +89,27 @@
     background: #f5d8ef;
     cursor: pointer;
 } 
+
+.mensaje-estado {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d0f0d8ad;
+  backdrop-filter: blur(4px); 
+  color: #376d3a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-weight: 600;
+  z-index: 9999;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.mensaje-estado.mostrar {
+  display: block;
+  opacity: 1;
+}
 
 html.dark .contacto h2 {
     color: #f2a187;

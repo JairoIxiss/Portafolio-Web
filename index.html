@@ -380,24 +380,25 @@
         <section class="contacto" id="contacto" data-aos="zoom-in" data-aos-once="true">
             <h2>Enviame un mensaje!</h2>
             <p>Tienes una propuesta o pregunta? Mándala!</p>
-            <form class="formulario-contacto" netlify>
+            <form class="formulario-contacto" id="formulario-contacto" method="POST">
                 <div class="input-item">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" name="nombre" required>
                     <span class="focus-border"></span>
                 </div>
                 <div class="input-item">
                     <label for="email">Correo</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                     <span class="focus-border"></span>
                 </div>
                 <div class="input-item">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" rows="5" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn-enviar">
                     Enviar → <span class="hover-efecto"></span>
                 </button>
+                <p class="mensaje-estado" id="mensaje-estado"></p>
             </form>
         </section>
     </main>
@@ -546,6 +547,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="js/script-modalProyectos.js"></script>
+    <script src="js/mensaje-enviado.js"></script>
 
 </body>
 </html>
