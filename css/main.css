@@ -17,6 +17,7 @@ main {
   position: absolute;
   left: 750px;
   bottom: -100px;
+  background-color: red;
 }
 
 .palm2 {
