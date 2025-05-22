@@ -23,9 +23,9 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: #603965;
-  -webkit-mask: url('/img/palm2.png') no-repeat center;
+  -webkit-mask: url('img/palm2.png') no-repeat center;
   -webkit-mask-size: contain;
-  mask: url('/img/palm2.png') no-repeat center;
+  mask: url('img/palm2.png') no-repeat center;
   mask-size: contain;
   position: absolute;
   left: -870px;
