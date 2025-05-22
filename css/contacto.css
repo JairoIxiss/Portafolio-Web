@@ -99,3 +99,39 @@ html.dark .contacto p{
 html.dark .formulario-contacto {
     color: #f2a187;
 }
+
+@media (max-width: 768px) {
+  .contacto {
+    padding: 40px 20px;
+    width: 95%;
+  }
+
+  .contacto h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contacto p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .formulario-contacto {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .input-item:nth-child(3),
+  .input-item:nth-child(4),
+  .btn-enviar {
+    grid-column: 1;
+  }
+
+  .btn-enviar {
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

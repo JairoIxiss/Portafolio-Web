@@ -104,26 +104,38 @@ html.dark .bienvenida-text {
 }
 
 @media (max-width: 768px) {
-    .inicio {
-        height: 100dvh;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-    }
 
-    .inicio .especialidad {
-        position: static;
-        margin: 0 auto;
-        font-size: clamp(2rem, 8vw, 4rem);
-    }
+  .palm1 {
+    left: 50%;
+    bottom: -200px;
+  }
 
-    .bienvenida-text {
-        font-size: 0.9rem;
-        padding-bottom: 100px;
-    }
+  .palm2 {
+     left: -60%;
+     bottom: -120px;
+  }
+
+  .inicio {
+    height: 100dvh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .inicio .especialidad {
+    position: static;
+    margin: 0 auto;
+    font-size: clamp(2rem, 8vw, 4rem);
+  }
+
+  .bienvenida-text {
+    font-size: 1rem;
+    padding: 20px 40px;
+  }
 }
 
 /*ANIMACIONES*/

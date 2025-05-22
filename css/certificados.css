@@ -45,6 +45,15 @@
 
 }
 
+.titulo-cert{
+    font-weight: 800;
+    text-align: center;
+}
+
+.institucion {
+    font-weight: 600;
+}
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -202,4 +211,40 @@ html.dark .tecnologias-container {
 
 html.dark .herramientas-container h2 {
     color: #f2a187;
+}
+
+@media (max-width: 768px) {
+    .certificados-container{
+        margin-left: 0;
+    }
+
+    .certificados{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .certificado {
+        width: 90%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .cont-text-botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tecnologias {
+        grid-template-rows: 1fr;
+    }
+
+    .herramientas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }

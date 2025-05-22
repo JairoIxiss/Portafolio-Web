@@ -133,7 +133,31 @@ html.dark .proyectos{
 
 @media (max-width: 768px) {
     .proyectos {
+        height: 100vh;
         grid-template-columns: 1fr;
+        padding-top: 5vh;
+    }
+
+    .proyectos-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .proyecto-container {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        height: 100px;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .proyectos-container p {
+        text-align: center;
+    }
+
+    .figuras {
+        display: none;
     }
 
     .fila2 {
@@ -141,14 +165,13 @@ html.dark .proyectos{
         grid-column: auto;
     }
 
-    .proyecto-container {
-        height: 30vh;
-    }
+    .proyecto-container img {
+        position: static;
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+        transform: none;
+        opacity: 1;
+  }
 
-    .proceso,
-    .proyecto-container.en-proceso {
-        grid-column: auto;
-        height: 30vh;
-        width: 100%;
-    }
 }
