@@ -43,8 +43,8 @@
 }
 
 .modal-content img {
-  max-width: 500px;
-  height: auto;
+  max-height: 200px;
+  width: auto;
   margin-top: 10px;
   border-radius: 10px;
 }
