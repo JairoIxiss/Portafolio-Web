@@ -7,30 +7,17 @@ main {
 }
 
 .palm1 {
-  width: 100vw;
   height: 100vh;
-  background-color: #603965;
-  -webkit-mask: url('img/palm.png') no-repeat center;
-  -webkit-mask-size: contain;
-  mask: url('img/palm.png') no-repeat center;
-  mask-size: contain;
   position: absolute;
-  left: 750px;
+  left: 80%;
   bottom: -100px;
-  background-color: red;
 }
 
 .palm2 {
-  width: 100vw;
   height: 100vh;
-  background-color: #603965;
-  -webkit-mask: url('img/palm2.png') no-repeat center;
-  -webkit-mask-size: contain;
-  mask: url('img/palm2.png') no-repeat center;
-  mask-size: contain;
   position: absolute;
-  left: -870px;
-  bottom: -80px;
+  right: 80%;
+  bottom: -40px;
 }
 
 /*------ INICIO ------*/
@@ -112,8 +99,8 @@ html.dark .bienvenida-text {
   }
 
   .palm2 {
-     left: -60%;
-     bottom: -120px;
+    right: 40%;
+    bottom: -100px;
   }
 
   .inicio {
