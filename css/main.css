@@ -25,7 +25,7 @@ main {
 .inicio {
     /*outline: 1px solid blue;*/
     width: 100%;
-    height:calc(100dvh - 100px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ main {
     position: static;
     text-align: center;
     margin: 0 auto;
-    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     animation: fadeInTop 0.8s ease-out forwards;
 }
 
@@ -53,7 +53,7 @@ main {
 }
 
 .inicio .especialidad {
-    font-size: clamp(1.5rem, 7vw, 5rem);
+    font-size: clamp(1.2rem, 5vw, 3rem);
     position: static;
     text-align: center;
     margin: 0 auto;
@@ -63,14 +63,19 @@ main {
 }
 
 .bienvenida-text {
-    padding: 20px 200px;
+    padding: 20px clamp(1rem, 10vw, 200px);
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    color: #886f9e;
+    color: #f5d8ef;
     animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.8s;
     opacity: 0;
+    background: #886f9e98;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(4px);
 }
 
 /*------ DARK MODE ------*/
@@ -160,5 +165,39 @@ html.dark .bienvenida-text {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .inicio {
+    min-height: 100vh;
+    padding: 30px 20px;
+    justify-content: center;
+  }
+
+  .bienvenida-text {
+    padding: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .palm1, .palm2 {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .bienvenida-text {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .inicio {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .inicio h2, .inicio .especialidad {
+    font-size: 2rem;
   }
 }
