@@ -1,19 +1,24 @@
 .sobremi {
     background: #816389;
     width: 90%;
-    height: 100dvh;
+    min-height: 100dvh;
     border-radius: 60px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 1rem
 }
 
 .principal {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
     height: 100%;
-    grid-template-columns: 1fr 80%;
 }
 
 .img-perfil {
-    /*outline: 1px solid red;*/
     width: 200px;
     height: 200px;
     border-radius: 100px 100px 0 0;
@@ -26,7 +31,7 @@
     color: #f5d8ef;
     font-size: clamp(1rem, 5vw, 2rem);
     font-weight: 600;
-    padding-top: 120px;
+    margin-top: 1rem;
     text-align: center;
     opacity: 0;
 }
@@ -49,6 +54,10 @@
     justify-content: center;
     margin: 2rem 0;
     grid-column: 1 / 3;
+}
+
+.descripcion, .cv-container {
+  grid-column: 1 / -1;
 }
 
 .btn-cv {
@@ -118,6 +127,22 @@ html.dark .btn-cv {
     .descripcion-foot {
         grid-column: auto;
     }
+}
+
+@media (max-width: 1024px) {
+  .principal {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .descripcion {
+    grid-column: 1 / 2;
+    margin: 0 10vw;
+  }
+
+  .cv-container {
+    grid-column: 1 / 2;
+  }
 }
 
 @keyframes fadeUp {
